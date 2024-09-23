@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[[${product.name}]] &ndash; Сельмаг</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+            font-size: 16px;
+            color: #555;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .edit-button {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .edit-button:hover {
+            background-color: #0056b3;
+        }
+
+        .delete-button {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            margin-top: 20px;
+        }
+
+        .delete-button:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <a href="#" data-th-href="@{/catalogue/products/list}">&larr; К списку товаров</a>
+    <h1 data-th-text="${product.name}"></h1>
+    <ul>
+        <li><strong>ID</strong>: <span data-th-text="${product.id}"></span></li>
+        <li><strong>Название</strong>: <span data-th-text="${product.name}"></span></li>
+        <li><strong>Описание</strong>: <span data-th-text="${product.description}"></span></li>
+    </ul>
+    <a href="#" class="button edit-button" data-th-href="@{/catalogue/products/{productId}/edit(productId=${product.id})}">Изменить</a>
+    <form method="post" data-th-action="@{/catalogue/products/{productId}/delete(productId=${product.id})}">
+        <button type="submit" class="button delete-button">Удалить</button>
+    </form>
+</div>
+</body>
+</html>

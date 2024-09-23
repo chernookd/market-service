@@ -1,0 +1,11 @@
+2024-09-20 13:07:29 [main] INFO  c.m.m.m.ManagerAppApplicationTests - Starting ManagerAppApplicationTests using Java 21.0.1 with PID 11876 (started by dcher in D:\Study\Project\parrent\manager-app)
+2024-09-20 13:07:29 [main] INFO  c.m.m.m.ManagerAppApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2024-09-20 13:07:30 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2024-09-20 13:07:30 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 2f938984-eb6c-499e-824c-eb455d27dbb5
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-20 13:07:30 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2801827a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@50bc3219, org.springframework.security.web.context.SecurityContextHolderFilter@1595d2b2, org.springframework.security.web.header.HeaderWriterFilter@14b4340c, org.springframework.web.filter.CorsFilter@599f1b7, org.springframework.security.web.csrf.CsrfFilter@61394494, org.springframework.security.web.authentication.logout.LogoutFilter@6f91fbda, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6629643d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@65cc5252, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@22791b75, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5785e813, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6cbb7a7d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@cdb3c85, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@64f4f12, org.springframework.security.web.access.ExceptionTranslationFilter@2313db84, org.springframework.security.web.access.intercept.AuthorizationFilter@251c90f]
+2024-09-20 13:07:30 [main] INFO  c.m.m.m.ManagerAppApplicationTests - Started ManagerAppApplicationTests in 1.735 seconds (process running for 2.746)
